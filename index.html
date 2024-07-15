@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container pt-2">
+      <h1 class="text-white pb-2">BookMarker</h1>
+      <hr class="text-muted" />
+      <div class="text-center form-project my-5 py-5 w-75 m-auto">
+        <h2>BookMark your favorite sites</h2>
+        <div class="form-group mx-5">
+          <label for="" class="text-center fw-bolder mb-2">Site Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Bookmark Name"
+          />
+        </div>
+
+        <div class="form-group mx-5">
+          <label for="" class="text-center fw-bolder mb-2">Site Url</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Url"
+            placeholder="website Url"
+          />
+        </div>
+        
+        <button class="btn submit text-white my-3 " onclick="addBookMark()" id="addBtn">Submit</button>
+      </div>
+      <input
+      oninput="search(this.value)"
+        type="search"
+        class="form-control w-75 m-auto"
+        placeholder="search by BookMark Name"
+      />
+      <div class="outBut w-75 m-auto">
+        <table class="table-striped table text-center my-4">
+          <!-- <thead>
+            
+          </thead> -->
+          <tbody id="tableBody">
+            <tr>
+              
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr class="text-muted" />
+      <footer class="my-5">
+        <h6 class="text-muted">@BookMark by Ola-eltawel</h6>
+      </footer>
+    </div>
+    <script src="/css/bootstrap.min.css"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
